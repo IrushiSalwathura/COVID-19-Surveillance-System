@@ -1,38 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c73fb23d-6d7c-4e91-95db-5024fb9f2fa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/DashboardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/GlobalCOVIDController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/MaangeHospitalsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/ManageQuarantineCentersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/ManageUsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/UserTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/GlobalCOVID.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ManageHospitals.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ManageQuarantineCenters.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ManageUsers.fxml" afterDir="false" />
+    <list default="true" id="c73fb23d-6d7c-4e91-95db-5024fb9f2fa4" name="Default Changelist" comment="Sprint 1 - Interfaces">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Acer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jfoenix-8.0.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-5.1.47.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/AppInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/META-INF/COVID-19 Surveillance System.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/assets/add_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/assets/main_content_list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/assets/main_corona.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/assets/main_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/assets/main_sidebar_globe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/assets/main_sidebar_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/assets/main_sidebar_hospital.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/assets/main_sidebar_quarantinecenter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/assets/main_sidebar_users.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/assets/subforms_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/GlobalCOVIDController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/ManageHospitalsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/ManageQuarantineCentersController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/ManageUsersController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/main/ContentAreaController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/main/DashboardMainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/main/SideBarController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/css/CovidSS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/util/UserTM.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/GlobalCOVID.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/ManageHospitals.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/ManageQuarantineCenters.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/ManageUsers.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/main/ContentArea.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/main/DashboardMain.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/main/SideBar.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/add_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/main_content_list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/main_corona.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/main_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/main_sidebar_globe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/main_sidebar_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/main_sidebar_hospital.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/main_sidebar_quarantinecenter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/main_sidebar_users.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/subforms_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/ManageHospitalsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/main/ContentAreaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/main/DashboardMainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/main/SideBarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/CovidSS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/main/ContentArea.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/main/DashboardMain.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/main/SideBar.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COVID-19 Surveillance System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/COVID-19 Surveillance System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/DashboardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/GlobalCOVIDController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GlobalCOVIDController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MaangeHospitalsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ManageQuarantineCentersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ManageQuarantineCentersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ManageUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ManageUsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Dashboard.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/GlobalCOVID.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/GlobalCOVID.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ManageHospitals.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ManageHospitals.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ManageQuarantineCenters.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ManageQuarantineCenters.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ManageUsers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ManageUsers.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="covid_19: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1bf8AwJ9XoLDbiP3QZrz3ouCM3k" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -42,11 +126,57 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../My work/LibraryManagementSystem" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DEP\COVID19 Assignment\COVID-19 Surveillance System\src\view\main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppInitializer" />
+      <module name="COVID-19 Surveillance System" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppInitializer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@1121a704" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -59,11 +189,103 @@
       <option name="presentableId" value="Default" />
       <updated>1589011647505</updated>
       <workItem from="1589011651767" duration="2833000" />
-      <workItem from="1589049038032" duration="1927000" />
+      <workItem from="1589049038032" duration="1942000" />
+      <workItem from="1589120361024" duration="603000" />
+      <workItem from="1589138055484" duration="638000" />
+      <workItem from="1589181503343" duration="604000" />
+      <workItem from="1589196971056" duration="12433000" />
+      <workItem from="1589246704921" duration="2950000" />
+      <workItem from="1589281399529" duration="3748000" />
+      <workItem from="1589314690548" duration="6675000" />
+      <workItem from="1589342137082" duration="2311000" />
+      <workItem from="1589344904212" duration="16698000" />
+      <workItem from="1589440119904" duration="1276000" />
+      <workItem from="1589612499386" duration="4424000" />
+      <workItem from="1589688637579" duration="639000" />
+      <workItem from="1589780022015" duration="4504000" />
+      <workItem from="1589825840855" duration="1459000" />
+      <workItem from="1589827576284" duration="3457000" />
+      <workItem from="1589831527417" duration="4542000" />
+      <workItem from="1589868044782" duration="5262000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sprint 1 - Interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sprint 1 - Interfaces" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="4" key="#Notifications" timestamp="1589835714166">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="4" key="#Notifications/0.0.1280.689@0.0.1280.689" timestamp="1589835714166" />
+    <state x="233" y="4" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589826498295">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="4" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1589826498295" />
+    <state x="169" y="0" key="CommitChangelistDialog2" timestamp="1589874532545">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="169" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589874532545" />
+    <state x="93" y="93" width="1095" height="504" key="DiffContextDialog" timestamp="1589836761650">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="93" y="93" width="1095" height="504" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1589836761650" />
+    <state x="348" y="86" key="FileChooserDialogImpl" timestamp="1589869609827">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="348" y="86" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589869609827" />
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1589836770743">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1589836770743" />
+    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1589836770743">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1589836770743" />
+    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1589836770743">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1589836770743" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1589836770743">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1589836770743" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1589213853598">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1589213853598" />
+    <state x="179" y="50" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1589833021960">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="179" y="50" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1280.689@0.0.1280.689" timestamp="1589833021960" />
+    <state x="337" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1589869052330">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="337" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1589869052330" />
+    <state x="450" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589871230453">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="450" y="262" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.689@0.0.1280.689" timestamp="1589871230453" />
+    <state x="381" y="137" key="git4idea.merge.GitMergeDialog" timestamp="1589835795057">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="381" y="137" key="git4idea.merge.GitMergeDialog/0.0.1280.689@0.0.1280.689" timestamp="1589835795057" />
   </component>
 </project>

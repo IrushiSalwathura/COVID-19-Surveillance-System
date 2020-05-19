@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="580.0" prefWidth="1000.0" style="-fx-background-color: #A0A6AF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.main.ContentAreaController">
+   <children>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="13.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/main_content_list.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnSidebar" buttonType="RAISED" layoutX="7.0" layoutY="6.0" onAction="#btnSidebar_OnAction" prefHeight="36.0" prefWidth="36.0" />
+      <Pane layoutX="43.0" layoutY="71.0" prefHeight="70.0" prefWidth="636.0" style="-fx-background-color: #576170;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Expand the side bar in order to see other options..." />
+         </children>
+      </Pane>
+      <Pane layoutX="45.0" layoutY="162.0" prefHeight="392.0" prefWidth="636.0" style="-fx-background-color: #576170;">
+         <children>
+            <Pane layoutX="26.0" layoutY="9.0" prefHeight="373.0" prefWidth="592.0" style="-fx-background-color: #262421;" />
+         </children>
+      </Pane>
+      <Label layoutX="59.0" layoutY="10.0" text="COVID-19 SURVEILLANCE SYSTEM" textFill="#313131">
+         <font>
+            <Font name="Calibri Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

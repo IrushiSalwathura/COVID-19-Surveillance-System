@@ -9,20 +9,28 @@ import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 
-public class ManageUsersController {
-    public JFXComboBox cmbUserRole;
+public class ManageHospitalsController {
+    public JFXComboBox cmbDistrict;
     boolean flag = true;
 
     public void initialize(){
-        cmbUserRole.getItems().removeAll(cmbUserRole.getItems());
-        cmbUserRole.getItems().addAll("Admin", "P.S.T.F. Member", "Hospital IT","Quarantine Center IT");
+        cmbDistrict.getItems().removeAll(cmbDistrict.getItems());
+        cmbDistrict.getItems().addAll("Northern-Jaffna","Northern-Kilinochchi","Northern-Mannar","Northern-Mullaitivu","Northern-Vavuniya",
+                "NorthWestern-Kurunegala","NorthWestern-Puttalam",
+                "NorthCentral-Anuradhapura","NorthCentral-Polonnaruwa",
+                "Central-Kandy","Central-Matale","Central-Nuwara Eliya",
+                "Western-Colombo","Western-Gampaha","Western-Kalutara",
+                "Southern-Galle","Southern-Matara","Southern-Hambantota",
+                "Sabaragamuwa-Kegalle","Sabaragamuwa-Ratnapura",
+                "Eastern-Trincomalee","Eastern-Batticaloa","Eastern-Ampara",
+                "Uva-Badulla","Uva-Monaragala");
     }
-    public void btnSidebar_OnAction(ActionEvent actionEvent) {
+    public void btnHome_OnAction(ActionEvent actionEvent) {
         BorderPane border_pane = (BorderPane) ((Node) actionEvent.getSource()).getScene().getRoot();
         if (flag == true) {
             Parent sidebar = null;
             try {
-                sidebar = FXMLLoader.load(getClass().getResource("/view/main/SideBar.fxml"));
+                sidebar = FXMLLoader.load(getClass().getResource("/view/main/ContentArea.fxml"));
                 border_pane.setLeft(sidebar);
                 flag = false;
             } catch (IOException e) {
@@ -34,12 +42,12 @@ public class ManageUsersController {
         }
     }
 
-    public void btnHome_OnAction(ActionEvent actionEvent) {
+    public void btnSidebar_OnAction(ActionEvent actionEvent) {
         BorderPane border_pane = (BorderPane) ((Node) actionEvent.getSource()).getScene().getRoot();
         if (flag == true) {
             Parent sidebar = null;
             try {
-                sidebar = FXMLLoader.load(getClass().getResource("/view/main/ContentArea.fxml"));
+                sidebar = FXMLLoader.load(getClass().getResource("/view/main/SideBar.fxml"));
                 border_pane.setLeft(sidebar);
                 flag = false;
             } catch (IOException e) {

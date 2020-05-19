@@ -1,0 +1,31 @@
+.sidebar-hBox-btn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1;
+}
+.sidebar-hBox-btn:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1;
+    -fx-border-color: rgb(22,169,250);
+    -fx-border-width: 0px 0px 0px 3px;
+}
+.label{
+    -fx-text-fill: #b8b1b1;
+}
+.sidebar-hBox-btn:pressed .label{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #0099ff;
+}
+.sidebar-hBox-btn:pressed .sidebar-hBox-btn-icon{
+    -fx-fill: #0099ff;
+}
+.contentArea-btn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+}
+.contentArea-btn:hover{
+    -fx-background-color: rgb(186,190,196);
+    -fx-background-radius: 0px;
+}
