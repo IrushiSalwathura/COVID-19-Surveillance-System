@@ -1,0 +1,72 @@
+CREATE DATABASE IF NOT EXISTS Covid_19;
+USE Covid_19;
+SHOW TABLES;
+
+CREATE TABLE IF NOT EXISTS Hospital(
+        hospitalId VARCHAR(10),
+        hospitalName VARCHAR(100),
+        city VARCHAR(100),
+        district VARCHAR(100),
+        capacity INT,
+        director VARCHAR(100),
+        directorContactNo VARCHAR(11),
+        hospitalContactNo1 VARCHAR(11),
+        hospitalContactNo2 VARCHAR(11),
+        hospitalFax VARCHAR(15),
+        hospitalEmail VARCHAR(80),
+        CONSTRAINT pk_hospital PRIMARY KEY (hospitalId)
+);
+
+INSERT INTO Hospital values ('H001','Base Hospital Panadura','Panadura','Western-Kalutara','150','Mr. Perera','077-1234567','011-1234567','011-1234568','011-1234567','panadurabase@gov.lk');
+INSERT INTO Hospital values ('H002','IDH','Colombo','Western-Colombo','220','Mr. Amal','077-1234587','011-2234586','011-3345987','011-2234587','idh@gov.lk');
+
+CREATE TABLE IF NOT EXISTS user_hospital(
+        username VARCHAR(50),
+        hospitalId VARCHAR(10),
+        CONSTRAINT pk_hospital PRIMARY KEY (username,hospitalId),
+        CONSTRAINT fk_hospital FOREIGN KEY (hospitalId) REFERENCES Hospital(hospitalId),
+        CONSTRAINT fk_username FOREIGN KEY (username) REFERENCES User(username)
+);
+CREATE TABLE IF NOT EXISTS QuarantineCenter(
+        centerId VARCHAR(10),
+        centerName VARCHAR(100),
+        city VARCHAR(100),
+        district VARCHAR(100),
+        head VARCHAR(100),
+        headContactNo VARCHAR(11),
+        centerContactNo1 VARCHAR(11),
+        centerContactNo2 VARCHAR(11),
+        capacity INT,
+        CONSTRAINT pk_hospital PRIMARY KEY (centerId)
+);
+INSERT INTO QuarantineCenter values ('C001','Punani','Punani','Eastern-Batticaloa','Mr. Nihal','077-1234567','065-1234567','065-1234568','450');
+INSERT INTO QuarantineCenter values ('C002','Diyathalawa','Diyathalawa','Uva-Badulla','Mr. Hiran','077-1233587','057-1234567','057-1234568','450');
+
+CREATE TABLE IF NOT EXISTS user_center(
+        username VARCHAR(50),
+        centerId VARCHAR(10),
+        CONSTRAINT pk_center PRIMARY KEY (username,centerId),
+        CONSTRAINT fk_center FOREIGN KEY (centerId) REFERENCES QuarantineCenter(centerId),
+        CONSTRAINT fk_center_username FOREIGN KEY (username) REFERENCES User(username)
+);
+CREATE TABLE IF NOT EXISTS User(
+        name VARCHAR(100),
+        userContactNo VARCHAR(11),
+        userEmail VARCHAR(80),
+        username VARCHAR(50),
+        password VARCHAR(10),
+        userRole VARCHAR(50),
+        CONSTRAINT pk_user PRIMARY KEY (username)
+
+);
+INSERT INTO QuarantineCenter values ('C001','Punani','Punani','Eastern-Batticaloa','Mr. Nihal','077-1234567','065-1234567','065-1234568','450');
+
+ALTER TABLE User MODIFY COLUMN password VARCHAR(10);
+ALTER TABLE User MODIFY COLUMN userRole VARCHAR(50);
+CREATE TABLE IF NOT EXISTS GlobalCovidData(
+    `date`           DATE,
+    confirmedCases INT,
+    recoveredCases INT,
+    deaths         INT,
+    CONSTRAINT pk_global PRIMARY KEY (`date`)
+);
