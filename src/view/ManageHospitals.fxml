@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="580.0" prefWidth="750.0" style="-fx-background-color: #6F7785;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageHospitalsController">
+<AnchorPane fx:id="root" prefHeight="580.0" prefWidth="750.0" style="-fx-background-color: #6F7785;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageHospitalsController">
    <children>
       <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="56.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -109,35 +109,35 @@
             </VBox>
             <VBox layoutX="175.0" layoutY="42.0" prefHeight="376.0" prefWidth="260.0" spacing="8.0">
                <children>
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtID" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtHospitalName" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtCity" promptText=":" unFocusColor="BLACK" />
                   <JFXComboBox fx:id="cmbDistrict" prefHeight="25.0" prefWidth="179.0" promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField prefHeight="32.0" prefWidth="260.0" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtCapacity" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtDirector" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtDirectorContact" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtHospitalContact1" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtHospitalContact2" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtHospitalFax" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtHospitalEmail" prefHeight="32.0" prefWidth="260.0" promptText=":" unFocusColor="BLACK" />
                </children>
             </VBox>
-            <JFXButton buttonType="RAISED" layoutX="305.0" layoutY="418.0" style="-fx-background-color: #B8B1B1;" text="SAVE">
+            <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="277.0" layoutY="417.0" onAction="#btnSave_OnAction" style="-fx-background-color: #B8B1B1;" text="SAVE">
                <font>
                   <Font name="Calibri Bold" size="16.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="366.0" layoutY="417.0" style="-fx-background-color: #B8B1B1;" text="DELETE">
+            <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="366.0" layoutY="417.0" onAction="#btnDelete_OnAction" style="-fx-background-color: #B8B1B1;" text="DELETE">
                <font>
                   <Font name="Calibri Bold" size="16.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnAdd" layoutX="417.0" layoutY="6.0" prefHeight="36.0" prefWidth="36.0" />
             <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="424.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/add_button.png" />
                </image>
             </ImageView>
+            <JFXButton fx:id="btnAdd" layoutX="417.0" layoutY="6.0" onAction="#btnAdd_OnAction" prefHeight="36.0" prefWidth="36.0" />
          </children>
       </Pane>
    </children>

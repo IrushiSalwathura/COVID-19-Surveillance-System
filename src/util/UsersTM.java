@@ -1,23 +1,35 @@
 package util;
 
-public class UserTM {
+import javafx.scene.control.Button;
+
+public class UsersTM {
+    private String username;
     private String name;
+    private String role;
+    private Button remove;
     private String userContactNo;
     private String userEmail;
-    private String username;
     private String password;
-    private String userRole;
 
-    public UserTM() {
+    public UsersTM() {
     }
 
-    public UserTM(String name, String userContactNo, String userEmail, String username, String password, String userRole) {
+    public UsersTM(String username, String name, String role, Button remove, String userContactNo, String userEmail, String password) {
+        this.username = username;
         this.name = name;
+        this.role = role;
+        this.remove = remove;
         this.userContactNo = userContactNo;
         this.userEmail = userEmail;
-        this.username = username;
         this.password = password;
-        this.userRole = userRole;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getName() {
@@ -26,6 +38,22 @@ public class UserTM {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public Button getRemove() {
+        return remove;
+    }
+
+    public void setRemove(Button remove) {
+        this.remove = remove;
     }
 
     public String getUserContactNo() {
@@ -44,27 +72,11 @@ public class UserTM {
         this.userEmail = userEmail;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getUserRole() {
-        return userRole;
-    }
-
-    public void setUserRole(String userRole) {
-        this.userRole = userRole;
     }
 }

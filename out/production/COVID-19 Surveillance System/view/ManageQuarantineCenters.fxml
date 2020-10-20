@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="580.0" prefWidth="750.0" style="-fx-background-color: #6F7785;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageQuarantineCentersController">
+<AnchorPane fx:id="root" prefHeight="580.0" prefWidth="750.0" style="-fx-background-color: #6F7785;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageQuarantineCentersController">
    <children>
       <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="19.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -33,8 +33,8 @@
       </Label>
       <Pane layoutX="19.0" layoutY="79.0" prefHeight="462.0" prefWidth="233.0" style="-fx-background-color: #576170;">
          <children>
-            <JFXListView layoutX="17.0" layoutY="52.0" prefHeight="390.0" prefWidth="200.0" style="-fx-background-color: #b8b1b1;" />
-            <JFXTextField layoutX="17.0" layoutY="21.0" prefHeight="25.0" prefWidth="200.0" promptText="SEARCH" unFocusColor="#040404" />
+            <JFXListView fx:id="listCenters" layoutX="17.0" layoutY="52.0" prefHeight="390.0" prefWidth="200.0" style="-fx-background-color: #b8b1b1;" />
+            <JFXTextField fx:id="txtSearch" layoutX="17.0" layoutY="21.0" prefHeight="25.0" prefWidth="200.0" promptText="SEARCH" unFocusColor="#040404" />
          </children>
       </Pane>
       <Pane layoutX="266.0" layoutY="79.0" prefHeight="462.0" prefWidth="470.0" style="-fx-background-color: #576170;">
@@ -95,23 +95,23 @@
             </VBox>
             <VBox layoutX="205.0" layoutY="41.0" prefHeight="329.0" prefWidth="225.0" spacing="8.0">
                <children>
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtCenterId" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtCenterName" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtCity" promptText=":" unFocusColor="BLACK" />
                   <JFXComboBox fx:id="cmbDistrict" prefHeight="25.0" prefWidth="179.0" promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField prefHeight="32.0" prefWidth="260.0" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtHead" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtHeadContactNo" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtCenterContactNo1" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtCenterContactNo2" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtCapacity" prefHeight="32.0" prefWidth="260.0" promptText=":" unFocusColor="BLACK" />
                </children>
             </VBox>
-            <JFXButton buttonType="RAISED" layoutX="280.0" layoutY="372.0" style="-fx-background-color: #B8B1B1;" text="SAVE">
+            <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="261.0" layoutY="372.0" onAction="#btnSave_OnAction" style="-fx-background-color: #B8B1B1;" text="SAVE">
                <font>
                   <Font name="Calibri Bold" size="16.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="355.0" layoutY="372.0" style="-fx-background-color: #B8B1B1;" text="DELETE">
+            <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="355.0" layoutY="372.0" onAction="#btnDelete_OnAction" style="-fx-background-color: #B8B1B1;" text="DELETE">
                <font>
                   <Font name="Calibri Bold" size="16.0" />
                </font>
@@ -121,7 +121,7 @@
                   <Image url="@../assets/add_button.png" />
                </image>
             </ImageView>
-            <JFXButton layoutX="420.0" layoutY="7.0" prefHeight="36.0" prefWidth="36.0" />
+            <JFXButton fx:id="btnAdd" layoutX="420.0" layoutY="7.0" onAction="#btnAdd_OnAction" prefHeight="36.0" prefWidth="36.0" />
          </children>
       </Pane>
    </children>

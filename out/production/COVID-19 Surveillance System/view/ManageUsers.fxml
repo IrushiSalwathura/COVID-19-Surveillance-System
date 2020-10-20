@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="580.0" prefWidth="750.0" style="-fx-background-color: #6F7785;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageUsersController">
+<AnchorPane fx:id="root" prefHeight="580.0" prefWidth="750.0" style="-fx-background-color: #6F7785;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageUsersController">
    <children>
       <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="19.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -61,7 +61,12 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label prefHeight="20.0" prefWidth="169.0" text="User Role" textFill="#272522">
+                  <Label prefHeight="65.0" prefWidth="139.0" text="User Role" textFill="#272522">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLocation" layoutX="10.0" layoutY="210.0" prefHeight="65.0" prefWidth="139.0" text="Location" textFill="#272522">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -70,41 +75,43 @@
             </VBox>
             <VBox layoutX="163.0" layoutY="92.0" prefHeight="217.0" prefWidth="162.0" spacing="12.0">
                <children>
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
-                  <JFXTextField promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtName" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtContactNo" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtEmail" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtUsername" promptText=":" unFocusColor="BLACK" />
+                  <JFXTextField fx:id="txtPassword" promptText=":" unFocusColor="BLACK" />
                   <JFXComboBox fx:id="cmbUserRole" prefHeight="25.0" prefWidth="179.0" promptText=":" unFocusColor="BLACK" />
                </children>
             </VBox>
-            <JFXButton buttonType="RAISED" layoutX="169.0" layoutY="389.0" style="-fx-background-color: #B8B1B1;" text="SAVE">
+            <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="169.0" layoutY="389.0" onAction="#btnSave_OnAction" style="-fx-background-color: #B8B1B1;" text="SAVE">
                <font>
                   <Font name="Calibri Bold" size="16.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="244.0" layoutY="389.0" style="-fx-background-color: #B8B1B1;" text="DELETE">
+            <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="244.0" layoutY="389.0" onAction="#btnDelete_OnAction" style="-fx-background-color: #B8B1B1;" text="DELETE">
                <font>
                   <Font name="Calibri Bold" size="16.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="291.0" layoutY="16.0" prefHeight="36.0" prefWidth="36.0" />
             <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="296.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/add_button.png" />
                </image>
             </ImageView>
+            <JFXButton fx:id="btnAdd" layoutX="291.0" layoutY="16.0" onAction="#btnAdd_OnAction" prefHeight="36.0" prefWidth="36.0" />
             <Label layoutX="14.0" layoutY="23.0" text="USER DETAILS:" textFill="#272522">
                <font>
                   <Font name="Calibri Bold" size="18.0" />
                </font>
             </Label>
+            <JFXComboBox fx:id="cmbHospitals" layoutX="163.0" layoutY="327.0" prefHeight="20.0" prefWidth="162.0" unFocusColor="BLACK" />
+            <JFXComboBox fx:id="cmbQuarantineCenters" layoutX="163.0" layoutY="327.0" prefHeight="20.0" prefWidth="162.0" unFocusColor="BLACK" />
          </children>
       </Pane>
       <Pane layoutX="387.0" layoutY="89.0" prefHeight="462.0" prefWidth="339.0" style="-fx-background-color: #576170;">
          <children>
-            <JFXTextField layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="313.0" promptText="Filter by username or name" unFocusColor="#090908" />
-            <TableView layoutX="14.0" layoutY="52.0" prefHeight="374.0" prefWidth="313.0" style="-fx-background-color: #b8b1b1;">
+            <JFXTextField fx:id="txtSearch" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="313.0" promptText="Filter by username or name" unFocusColor="#090908" />
+            <TableView fx:id="tblUser" layoutX="14.0" layoutY="52.0" prefHeight="374.0" prefWidth="313.0" style="-fx-background-color: #b8b1b1;">
               <columns>
                 <TableColumn prefWidth="75.0" text="Username" />
                 <TableColumn prefWidth="75.0" text="Name" />
