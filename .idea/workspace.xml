@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c73fb23d-6d7c-4e91-95db-5024fb9f2fa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DBConnect/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/CenterTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/HospitalTM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/UsersTM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COVID-19 Surveillance System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/COVID-19 Surveillance System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/META-INF/COVID-19 Surveillance System.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/GlobalCOVIDController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/GlobalCOVIDController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/ManageHospitalsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/ManageHospitalsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/ManageQuarantineCentersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/ManageQuarantineCentersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/controller/ManageUsersController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/util/UserTM.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/GlobalCOVID.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/GlobalCOVID.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/ManageHospitals.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/ManageHospitals.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/ManageQuarantineCenters.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/ManageQuarantineCenters.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/ManageUsers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COVID-19 Surveillance System/view/ManageUsers.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/GlobalCOVIDController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GlobalCOVIDController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ManageHospitalsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ManageHospitalsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ManageQuarantineCentersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ManageQuarantineCentersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ManageUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ManageUsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/UserTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/UserTM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/GlobalCOVID.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/GlobalCOVID.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ManageHospitals.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ManageHospitals.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ManageQuarantineCenters.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ManageQuarantineCenters.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ManageUsers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ManageUsers.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +74,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Covid/COVID-19 Surveillance System" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -112,6 +88,17 @@
     <configuration name="AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AppInitializer" />
       <module name="COVID-19 Surveillance System" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,7 +158,7 @@
       <workItem from="1593489330271" duration="1486000" />
       <workItem from="1593583482177" duration="614000" />
       <workItem from="1596965856906" duration="561000" />
-      <workItem from="1603193300618" duration="307000" />
+      <workItem from="1603193300618" duration="1253000" />
     </task>
     <task id="LOCAL-00001" summary="Sprint 1 - Interfaces">
       <created>1589874601781</created>
@@ -207,5 +194,21 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1603193443186" />
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1603194175887">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1603194175887" />
+    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1603194175887">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1603194175887" />
+    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1603194175886">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1603194175886" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1603194175887">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1603194175887" />
   </component>
 </project>
